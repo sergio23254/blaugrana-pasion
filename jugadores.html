@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jugadores Actuales - Blaugrana Pasión</title>
+  <style>
+    body 
+	   {
+  font-family: Arial, sans-serif;
+  background-image: url("imagenes/estadio camp.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+}
+	  h1 {
+  text-align: center;
+  color: #fff200;
+  font-size: 2.8rem;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6); /* oscurece el fondo para que se lea mejor */
+  z-index: -1;
+}
+{
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff200;
+    }
+
+    .contenedor-jugadores {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .jugador-card {
+      background-color: #1c2b3a;
+      border-radius: 10px;
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .jugador-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .jugador-card h3 {
+      margin: 10px 0 5px;
+      color: #fff200;
+    }
+
+    .jugador-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    a.volver {
+      display: block;
+      margin: 30px auto 0;
+      width: max-content;
+      padding: 10px 20px;
+      background-color: #004d98;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    a.volver:hover {
+      background-color: #a50044;
+    }
+	  .jugador-fila {
+  display: flex;
+  align-items: flex-start;
+  background-color: #1c2b3a;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px auto;
+  max-width: 900px;
+  gap: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.jugador-fila img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+
+
+}
+
+.info-jugador {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-jugador h3 {
+  margin: 0;
+  color: #fff200;
+}
+
+.info-jugador p {
+  margin: 10px 0;
+  color: #ddd;
+}
+
+.datos-jugador {
+  background-color: #0e1a2b;
+  padding: 10px;
+  border-radius: 8px;
+  list-style: none;
+  color: #ccc;
+  margin: 10px 0;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.datos-jugador li {
+  margin: 5px 0;
+}
+
+.datos-jugador strong {
+  color: #fff200;
+}
+
+.video-jugador {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+.video-jugador video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+	  .botones-navegacion {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btn-navegacion {
+  background-color: #004d98;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.btn-navegacion:hover {
+  background-color: #a50044;
+  transform: scale(1.05);
+}
+	  
+
+
+	  
+  </style>
+</head>
+<body>
+	<div class="botones-navegacion">
+  <a href="pagina principal.html" class="btn-navegacion">🏠 Inicio</a>
+  <a href="contacto.html" class="btn-navegacion">✉️ Contacto</a>
+</div>
+
+  <h1>🔥 Plantilla Oficial del FC Barcelona 2025 🔥</h1>
+
+
+  <div class="jugador-fila">
+  <img src="imagenes/ter stegen.jpg" alt="Ter Stegen">
+
+  <div class="info-jugador">
+    <h3>Marc-André ter Stegen</h3>
+    <p>Portero titular del FC Barcelona. Gran reflejo, control de balón y liderazgo desde el arco.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> Alemania </li>
+      <li><strong>Edad:</strong> 31 años</li>
+      <li><strong>Posición:</strong> Portero</li>
+      <li><strong>Altura:</strong> 1.87 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/ter stegen.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+
+
+    <div class="jugador-fila">
+  <img src="imagenes/iñaki peña.jpg" alt="Iñaki Peña">
+
+  <div class="info-jugador">
+    <h3>Iñaki Peña</h3>
+    <p>Conocido por su tranquilidad bajo presión y su habilidad con los pies.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 26 años</li>
+      <li><strong>Posición:</strong> Portero</li>
+      <li><strong>Altura:</strong> 1.85 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/Iñaki Peña.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+
+    <div class="jugador-fila">
+  <img src="imagenes/portero 3.jpg" alt="szczesny">
+
+  <div class="info-jugador">
+    <h3>Wojciech Szczesny</h3>
+    <p>Habilidad para leer el juego, su buen desempeño en duelos uno a uno.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> Polonia </li>
+      <li><strong>Edad:</strong> 35 años</li>
+      <li><strong>Posición:</strong> Portero</li>
+      <li><strong>Altura:</strong> 1.96 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/Szczęsny.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	  
+	  <div class="jugador-fila">
+  <img src="imagenes/Pau Cubarsi.jpeg" alt="Pau Cubarsi">
+
+  <div class="info-jugador">
+    <h3>Pau Cubarsi</h3>
+    <p>Juega como defensa central, se destaca por su buen juego de pelota y su fortaleza en el juego aéreo.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 18 años</li>
+      <li><strong>Posición:</strong> Defensa</li>
+      <li><strong>Altura:</strong> 1.84 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/Pau Cubarsi.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/Ronald Araujo.jpeg" alt="Ronald Aráujo">
+
+  <div class="info-jugador">
+    <h3>Ronald Aráujo</h3>
+    <p>Conocido por su fortaleza física,velocidad y capacidad en el juego aéreo.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> Uruguay </li>
+      <li><strong>Edad:</strong> 26 años</li>
+      <li><strong>Posición:</strong> Defensa</li>
+      <li><strong>Altura:</strong> 1.88 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/araujo.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/Jules Kounde.jpeg" alt="Jules Koundé">
+
+  <div class="info-jugador">
+    <h3>Jules Koundé</h3>
+    <p>Versátil que puede jugar como central o lateral derecho.Destaca por su rapidez.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> Francia </li>
+      <li><strong>Edad:</strong> 26 años</li>
+      <li><strong>Posición:</strong> Defensa</li>
+      <li><strong>Altura:</strong> 1.80 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/JULES.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+    
+	<div class="jugador-fila">
+  <img src="imagenes/iñigo martinez.jpeg" alt="Iñigo Martínez">
+
+  <div class="info-jugador">
+    <h3>Iñigo Martínez</h3>
+    <p>Aporta liderazgo y solidez desensiva. su capacidad para leer el juego.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 33 años</li>
+      <li><strong>Posición:</strong> Defensa</li>
+      <li><strong>Altura:</strong> 1.82 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/Iñigo.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/Alejandro Balde.jpeg" alt="Alejandro Balde">
+
+  <div class="info-jugador">
+    <h3>Alejandro Balde</h3>
+    <p>Destaca por su velocidad, proyección ofensiva y capacidad para desbordar por la banda.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 21 años</li>
+      <li><strong>Posición:</strong> Defensa</li>
+      <li><strong>Altura:</strong> 1.75 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/Alejandro.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/Gerard Martin.jpeg" alt="Gerard Martín">
+
+  <div class="info-jugador">
+    <h3>Gerard Martín</h3>
+    <p>Jovén que ha te nido la oprtunidad de estar en el primer equipo, demostrando compromiso y proyección.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 23 años</li>
+      <li><strong>Posición:</strong> Defensa</li>
+      <li><strong>Altura:</strong> 1.86 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/gerard.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/Hector fort.jpg" alt="Hector Fort">
+
+  <div class="info-jugador">
+    <h3>Hector Fort</h3>
+    <p>Joven promesa que ha demostrado estar en el primer equipo por su compromiso.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 18 años</li>
+      <li><strong>Posición:</strong> Defensa</li>
+      <li><strong>Altura:</strong> 1.85 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/hector.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/pedri.jpeg" alt="Pedri">
+
+  <div class="info-jugador">
+    <h3>Pedri</h3>
+    <p>Reconocido por su visión de juego, control de balón y capacidad para conectar lineas.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 22 años</li>
+      <li><strong>Posición:</strong> Centrocampista</li>
+      <li><strong>Altura:</strong> 1.74 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/pedri.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/frenkie de jong.jpeg" alt="Frankie de Jong">
+
+  <div class="info-jugador">
+    <h3>Frankie de Jong</h3>
+    <p>Destaca por su conducción de balón, inteligencia táctica y versatilidad en el medio de campo.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> Holanda/Paises Bajos </li>
+      <li><strong>Edad:</strong> 27 años</li>
+      <li><strong>Posición:</strong> Centrocampista</li>
+      <li><strong>Altura:</strong> 1.81 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/frankie.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/gavi.jpeg" alt="Gavi">
+
+  <div class="info-jugador">
+    <h3>Gavi</h3>
+    <p>Conocido por su intensidad, agresividad positiva y habilidad para recuperar balones.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 20 años</li>
+      <li><strong>Posición:</strong> Centrocampista</li>
+      <li><strong>Altura:</strong> 1.73 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/gavi.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/dani olmo.jpeg" alt="Dani Olmo">
+
+  <div class="info-jugador">
+    <h3>Dani Olmo</h3>
+    <p>Reciente incorporación al equipo, aporta creatividad, visión y capacidad para asistir y hacer goles.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 26 años</li>
+      <li><strong>Posición:</strong> Centrocampista</li>
+      <li><strong>Altura:</strong> 1.79 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/dani.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/Fermín lópez.jpeg" alt="Fermín López">
+
+  <div class="info-jugador">
+    <h3>Fermín López</h3>
+    <p>Destacado por su llegada al área y capacidad de remate.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 21 años</li>
+      <li><strong>Posición:</strong> Centrocampista</li>
+      <li><strong>Altura:</strong> 1.75 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/fermin.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/Marc casado.jpeg" alt="Marc Casadó">
+
+  <div class="info-jugador">
+    <h3>Marc Casadó</h3>
+    <p>Jóven mediocampista que ha tenido minutos en el primer equipo, demostrando potencial y compromiso</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 21 años</li>
+      <li><strong>Posición:</strong> Centrocampista</li>
+      <li><strong>Altura:</strong> 1.72 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/marc.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/lamine yamal.jpeg" alt="Lamine Yamal">
+
+  <div class="info-jugador">
+    <h3>Lamine Yamal</h3>
+    <p>Considerado una de las mayores promesas del futbol mundial, destaca por su regate, velocidad y capacidad para asistir.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 17 años</li>
+      <li><strong>Posición:</strong> Delantero</li>
+      <li><strong>Altura:</strong> 1.80 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/lamine.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/lewandowski.jpeg" alt="Robert Lewandowski">
+
+  <div class="info-jugador">
+    <h3>Robert Lewndowski</h3>
+    <p>Reconocido por su instinto goleador, posicionalmente y experincia.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> Polonia </li>
+      <li><strong>Edad:</strong> 36 años</li>
+      <li><strong>Posición:</strong> Delantero</li>
+      <li><strong>Altura:</strong> 1.85 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/lewa.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/raphinha.jpeg" alt="Raphinha">
+
+  <div class="info-jugador">
+    <h3>Raphinha</h3>
+    <p>Conocido por su velocidad, regate y capacidad para crear oportunidades desde la banda derecha.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> Brasil </li>
+      <li><strong>Edad:</strong> 28 años</li>
+      <li><strong>Posición:</strong> Delantero</li>
+      <li><strong>Altura:</strong> 1.76 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/raphinha.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/Ferran torres.jpeg" alt="Ferran Torres">
+
+  <div class="info-jugador">
+    <h3>Ferran Torres</h3>
+    <p>Ha demostrado versatilidad al jugar como extremo y delantero centro.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 25 años</li>
+      <li><strong>Posición:</strong> Delantero</li>
+      <li><strong>Altura:</strong> 1.84 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/ferran.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	<div class="jugador-fila">
+  <img src="imagenes/ansu fati.jpeg" alt="Ansu Fati">
+
+  <div class="info-jugador">
+    <h3>Ansu Fati</h3>
+    <p>Aportando desequilibro y capacidad para marcar desde posiciones ofensivas.</p>
+
+    <ul class="datos-jugador">
+      <li><strong>País:</strong> España </li>
+      <li><strong>Edad:</strong> 22 años</li>
+      <li><strong>Posición:</strong> Delantero</li>
+      <li><strong>Altura:</strong> 1.78 m</li>
+    </ul>
+
+    <div class="video-jugador">
+      <video controls>
+        <source src="video/ansu.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+	
+	
+	
+    
+    <!-- Agregá más jugadores aquí -->
+  
+
+  <a class="volver" href="pagina principal.html.html">← Volver al inicio</a>
+</body>
+</html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Equipo actual</title>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Historia del FC Barcelona - Blaugrana Pasión</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0e1a2b;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      background: linear-gradient(to right, #a50044, #004d98);
+      padding:15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #fff200;
+    }
+
+    .botones-navegacion {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .btn-navegacion {
+      background-color: #004d98;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-navegacion:hover {
+      background-color: #a50044;
+      transform: scale(1.05);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      background-color: #1c2b3a;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #fff200;
+      border-bottom: 2px solid #004d98;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "🏆 ";
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: linear-gradient(to right, #a50044, #004d98);
+      margin-top: 30px;
+    }
+	  body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('imagenes/estadio afuera.jpg'); /* O el fondo que tengas */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Esto crea el efecto parallax */
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* oscurece un poco para que se lea mejor el texto */
+  z-index: -1;
+}
+.video-contenedor {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+	  .seccion-dos-columnas {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap; /* Para celulares */
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 15px;
+}
+
+.contenido-izquierda {
+  flex: 2;
+  min-width: 300px;
+}
+
+.video-contenedor video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  margin-top: 20px;
+}
+
+.imagenes-derecha {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 200px;
+}
+
+.imagenes-derecha img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+@media (max-width: 768px) {
+  .seccion-dos-columnas {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.imagenes-derecha img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 3px solid transparent; /* borde invisible por defecto */
+}
+
+/* Efecto cuando pasa el mouse */
+.imagenes-derecha img:hover {
+  transform: scale(1.05); /* Zoom suave */
+  border: 3px solid gold; /* Borde dorado */
+}
+	  #titulos-principales {
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.contenedor-titulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.tarjeta-titulo {
+  background-color: #1c2b3a;
+  border-radius: 15px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.tarjeta-titulo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+}
+
+.tarjeta-titulo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.tarjeta-titulo h3 {
+  font-size: 1rem;
+  color: #fff200;
+}
+	 #epocas-gloria {
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.contenedor-epocas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.texto-video {
+  flex: 2;
+  min-width: 300px;
+  text-align: left;
+  color: white;
+}
+
+.texto-video p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.video-gloria video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.galeria-gloria {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.galeria-gloria img {
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* 📱 Responsive para celulares */
+@media (max-width: 768px) {
+  .contenedor-epocas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-video {
+    text-align: center;
+  }
+
+  .galeria-gloria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .galeria-gloria img {
+    max-width: 45%;
+  }
+}
+
+	  #uniformes-barcelona {
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.contenedor-uniformes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.tarjeta-uniforme {
+  background-color: #1c2b3a;
+  border-radius: 15px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-uniforme:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+}
+
+.tarjeta-uniforme img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.tarjeta-uniforme h3 {
+  font-size: 1.2rem;
+  color: #fff200;
+  margin: 10px 0;
+}
+
+.tarjeta-uniforme p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* 📱 Responsive para celulares y tabletas */
+@media (max-width: 768px) {
+  .contenedor-uniformes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta-uniforme {
+    width: 90%; /* Para que se vea más grande en celulares */
+  }
+}
+	 #fundacion {
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.contenedor-fundacion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.texto-video {
+  flex: 2;
+  min-width: 300px;
+  text-align: left;
+  color: white;
+}
+
+.texto-video p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.video-fundacion video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.galeria-escudos {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.galeria-escudos img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* 📱 Responsive para celular */
+@media (max-width: 768px) {
+  .contenedor-fundacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-video {
+    text-align: center;
+  }
+
+  .galeria-escudos img {
+    max-width: 90%;
+  }
+}
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Historia del FC Barcelona</h1>
+</header>
+
+<div class="botones-navegacion">
+  <a href="pagina principal.html" class="btn-navegacion">🏠 Inicio</a>
+  <a href="contacto.html" class="btn-navegacion">✉️ Contacto</a>
+</div>
+
+<section id="fundacion">
+  <h2>📖 Fundaciones y Primeros Años</h2>
+
+  <div class="contenedor-fundacion">
+
+    <div class="texto-video">
+      <p>El FC Barcelona fue fundado en 1899 por un grupo de futbolistas suizos, ingleses y catalanes liderados por Joan Gamper. Desde sus inicios, el club ha representado la identidad catalana y se ha convertido en un símbolo de su cultura.</p>
+
+      <div class="video-fundacion">
+        <video controls poster="imagenes/barca 23.jpeg">
+          <source src="video/historia.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+      </div>
+    </div>
+
+    <div class="galeria-escudos">
+      <img src="imagenes/escudo2.jpeg" alt="Evolución de los escudos del Barça">
+    </div>
+
+  </div>
+</section>
+
+
+	
+	
+	<section id="uniformes-barcelona">
+  <h2>👕 Uniformes Históricos del FC Barcelona</h2>
+
+  <div class="contenedor-uniformes">
+
+    <div class="tarjeta-uniforme">
+      <img src="imagenes/uniforme 1.jpeg" alt="Uniforme 1899">
+      <h3>Uniforme 1899</h3>
+      <p>El primer uniforme del club: camiseta azulgrana a rayas verticales y pantalón blanco.</p>
+    </div>
+
+    <div class="tarjeta-uniforme">
+      <img src="imagenes/uniforme 2.jpeg" alt="Uniforme 1992 Dream Team">
+      <h3>Uniforme 1992</h3>
+      <p>El uniforme del legendario "Dream Team" que ganó su primera Champions League en Wembley.</p>
+    </div>
+
+    <div class="tarjeta-uniforme">
+      <img src="imagenes/uniforme 3.jpeg" alt="Uniforme 2009 Triplete">
+      <h3>Uniforme 2009</h3>
+      <p>La equipación de la temporada histórica en la que el Barça ganó el triplete bajo Guardiola.</p>
+    </div>
+
+    <div class="tarjeta-uniforme">
+      <img src="imagenes/uniforme 4.jpeg" alt="Uniforme actual">
+      <h3>Uniforme Actual</h3>
+      <p>La nueva camiseta para la temporada actual, inspirada en las raíces y valores del club.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="epocas-gloria">
+  <h2>☀️ Épocas de Gloria</h2>
+
+  <div class="contenedor-epocas">
+
+    <div class="texto-video">
+      <p>Con el paso de los años, el FC Barcelona ha vivido épocas doradas bajo entrenadores legendarios como Johan Cruyff, Pep Guardiola, y figuras históricas como Lionel Messi, Ronaldinho, Xavi e Iniesta. Una era de tiki-taka, pasión y títulos inolvidables que marcaron la historia del fútbol mundial.</p>
+
+      <div class="video-gloria">
+        <video controls poster="imagenes/epoca 3.jpeg">
+          <source src="video/miedo.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+      </div>
+    </div>
+
+    <div class="galeria-gloria">
+      <img src="imagenes/epoca 2.jpeg" alt="Ronaldinho levantando Champions">
+      <img src="imagenes/epoca1.jpeg" alt="Jugadores celebrando título">
+    </div>
+
+  </div>
+</section>
+
+
+<section id="titulos-principales">
+  <h2>🏆 Títulos Principales</h2>
+
+  <div class="contenedor-titulos">
+
+    <div class="tarjeta-titulo">
+      <img src="imagenes/la liga.jpeg" alt="La Liga">
+      <h3>27 Ligas Españolas</h3>
+    </div>
+
+    <div class="tarjeta-titulo">
+      <img src="imagenes/copa.jpeg" alt="Copa del Rey">
+      <h3>31 Copas del Rey</h3>
+    </div>
+
+    <div class="tarjeta-titulo">
+      <img src="imagenes/champions.jpeg" alt="Champions League">
+      <h3>5 Champions League</h3>
+    </div>
+
+    <div class="tarjeta-titulo">
+      <img src="imagenes/fifa.jpeg" alt="Mundial de Clubes">
+      <h3>3 Mundiales de Clubes</h3>
+    </div>
+
+    <div class="tarjeta-titulo">
+      <img src="imagenes/europa.jpeg" alt="Supercopa de Europa">
+      <h3>5 Supercopas de Europa</h3>
+    </div>
+
+    <div class="tarjeta-titulo">
+      <img src="imagenes/supercopa.jpeg" alt="Supercopa de España">
+      <h3>14 Supercopas de España</h3>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+  <p>&copy; 2025 Blaugrana Pasión. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Historia.html</title>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaugrana Pasión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+		
+		
+        body {
+            font-family: 'calibri ', sans-serif;
+            background-color: #0e1a2b;
+            color: #ffffff;
+            margin: 0;
+        }
+		
+        header {
+            background: linear-gradient(to right, #a50044, #004d98);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #a50044;
+            color: #fff200;
+        }
+        section {
+            background-color: #1c2b3a;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        section h2 {
+            border-bottom: 2px solid #004d98;
+            padding-bottom: 5px;
+            color: #fff200;
+        }
+        footer {
+            background-color: linear-gradient(to right, #a50044, #004d98); 
+			background: linear-gradient(to right, #a50044, #004d98);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 40px;
+        }
+		body {
+  position: relative;
+  background-image: url('camp nou.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  margin: 0;
+}
+		
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* oscurece la imagen */
+  z-index: -1;
+}
+
+		.noticias {
+  background-color: #0e1a2b;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.noticias h2 {
+  color: #fff200;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contenedor-noticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.tarjeta {
+  background-color: #1c2b3a;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 10px rgba(0,0,0,0.8);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.contenido {
+  padding: 20px;
+}
+
+.contenido .categoria {
+  color: #fff200;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contenido h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.contenido p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+		body::before {
+  content: "";
+  position: fixed;
+  top: 50;
+  left: 50;
+  width: 100%;
+  height: 100%;
+  background-image: url('imagenes/camp nou.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  z-index: -1;
+}
+		/* estilos.css */
+a {
+  color: yellow;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+		.btn-efecto {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-efecto:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+		.galeria-equipo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.galeria-equipo img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.galeria-equipo img:hover {
+  transform: scale(1.05);
+}
+
+.card-tecnico {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.imagen-tecnico {
+  width: 120px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.info-tecnico h3 {
+  margin: 0 0 5px;
+}
+
+.info-tecnico p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-contenido {
+  background-color: #1c2b3a;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  text-align: center;
+  position: relative;
+}
+
+.popup-contenido h2 {
+  color: #fff200;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+.video-cuadro {
+  width: 300px;        /* Tamaño del cuadro */
+  height: 300px;
+  overflow: hidden;    /* Esto impide que se salga */
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.video-cuadro video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* Esto recorta y ajusta sin deformar */
+  display: block;
+}
+		.btn-efecto {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-efecto:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+		.mini-reproductor {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(to right, #a50044, #004d98);
+  padding: 10px 15px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+#playPause {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  color: #a50044;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#playPause:hover {
+  transform: scale(1.1);
+}
+
+#barraProgreso {
+  width: 100px;
+  height: 5px;
+  cursor: pointer;
+}
+
+#controlVolumen {
+  width: 60px;
+  height: 5px;
+  cursor: pointer;
+}
+		.btn-informacion {
+  display: inline-block;
+  background-color: #004d98;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 10px;
+}
+
+.btn-informacion:hover {
+  background-color: #FFF200;
+  transform: scale(1.05);
+}
+
+
+		
+		
+
+    </style>
+</head>
+<div class="mini-reproductor">
+  <audio id="musica-fondo" src="musica/coldplay.mp3"></audio>
+
+  <button id="playPause" onclick="controlarMusica()">▶️</button>
+  <input type="range" id="barraProgreso" value="0" step="1">
+  <input type="range" id="controlVolumen" min="0" max="1" step="0.1" value="0.3">
+</div>
+
+
+
+
+<script>
+var musica = document.getElementById('musica-fondo');
+var playPauseBtn = document.getElementById('playPause');
+var barraProgreso = document.getElementById('barraProgreso');
+var controlVolumen = document.getElementById('controlVolumen');
+
+// Controlar Play/Pause
+function controlarMusica() {
+  if (musica.paused) {
+    musica.play();
+    playPauseBtn.textContent = "⏸️"; // cambia a pausa
+  } else {
+    musica.pause();
+    playPauseBtn.textContent = "▶️"; // cambia a play
+  }
+}
+
+// Actualizar barra de progreso
+musica.addEventListener('timeupdate', function() {
+  barraProgreso.max = musica.duration;
+  barraProgreso.value = musica.currentTime;
+});
+
+// Cambiar posición de la canción
+barraProgreso.addEventListener('input', function() {
+  musica.currentTime = barraProgreso.value;
+});
+
+// Cambiar volumen
+controlVolumen.addEventListener('input', function() {
+  musica.volume = controlVolumen.value;
+});
+
+// Volumen inicial suave
+window.addEventListener('load', function() {
+  musica.volume = 0.3;
+});
+</script>
+
+
+
+
+
+
+
+
+
+<!-- Ventana emergente 1: Bienvenida -->
+<div id="popup-bienvenida" class="popup">
+  <div class="popup-contenido">
+    <span class="cerrar" onclick="cerrarPopup('popup-bienvenida')">&times;</span>
+    <h2>👋 ¡Bienvenido a <span style="color: #FFF200;">Blaugrana Pasión</span>!</h2>
+    <p><strong>Vibra con la historia, emoción y grandeza del FC Barcelona.</strong> <br>¡Força Barça! 💙❤️</p>
+  </div>
+</div>
+
+<!-- Ventana emergente 2: Noticia especial -->
+<div id="popup-noticia" class="popup">
+  <div class="popup-contenido">
+    <span class="cerrar" onclick="cerrarPopup('popup-noticia')">&times;</span>
+    <h2 style="color: #ffcc00;">⚽ ¡CLÁSICO A LA VISTA!</h2>
+    <p><strong>Este fin de semana nos enfrentamos al Real Madrid</strong><br><span style="color: #FDFDFD;">¡No te lo podés perder!</span> 🏟️🔥</p>
+	  <section class="noticias">
+  <h2>Resumen del partido anterior</h2>
+  
+  <div class="video-cuadro">
+  <video src="video/barcelona.mp4" autoplay muted loop controls></video>
+</div>
+
+
+</section>
+  </div>
+</div>
+
+
+<script>
+
+  
+  function mostrarPopup(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+
+  function cerrarPopup(id) {
+    document.getElementById(id).style.display = 'none';
+
+    // Si se cerró la bienvenida, mostrar la segunda
+    if (id === 'popup-bienvenida') {
+      setTimeout(function() {
+        mostrarPopup('popup-noticia');
+      }, 500); // se abre medio segundo después
+    }
+  }
+
+  // Mostrar la primera ventana al cargar
+  window.onload = function() {
+    setTimeout(function() {
+      mostrarPopup('popup-bienvenida');
+    }, 1000); // después de 1 segundo
+  }
+</script>
+
+
+
+	
+
+    <header>
+		 <div class="logo-container">
+      <img src="imagenes/gratis-png-f-c-logo-de-barcelona-__fc-barcelona-handbol-uefa-champions-league-la-liga-fc-logo-de-barcelona-thumbnail-removebg-preview.png" alt="Logo de la empresa" width="90">
+        <h1><strong>BLAUGRANA PASIÓN&nbsp;</strong></h1>
+			</div>
+			 
+    </header>
+
+    <nav>
+        <a href="#seccion1">Inicio</a>
+        <a href="#seccion2">Historia del Club</a>
+        <a href="#seccion3">Equipo Actual</a>
+		<a href="#seccion4">Leyendas</a>
+		<a href="#seccion5">Tecnicos</a>
+		<a href="contacto.html" style="
+  background-color: #004d98;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+">Ir a Contacto</a>
+		
+
+    </nav>
+
+	
+    <section id="seccion1">
+        <h2>Bienvenidos.</h2>
+        <p>¡Bienvenidos a Blaugrana Pasión! Somos el espacio definitivo para todos los apasionados del FC Barcelona. Aquí encontrarás las últimas noticias, el calendario de partidos, la historia del club y mucho más. Únete a nuestra comunidad de auténticos culés y vive la emoción del Barça como nunca antes. Força Barça y que la pasión por nuestros colores nunca se detenga. ¡Visca el Barça! 🏆💙❤️</p>
+    </section>
+	
+	
+	<section class="noticias">
+  <h2>Últimas Noticias</h2>
+  <div class="contenedor-noticias">
+    
+    <div class="tarjeta">
+      <img src="imagenes/cat.jpg" alt="Partido fantástico">
+      <div class="contenido">
+        <span class="categoria">PRIMER EQUIPO - Hace 39 min</span>
+        <h3>"La nueva mascota del Club"</h3>
+        <p>Conoce al nuevo niembro del club "CAT"</p>
+      </div>
+    </div>
+	  
+ <div class="tarjeta">
+      <img src="imagenes/hinchada.jpg" alt="Partido fantástico">
+      <div class="contenido">
+        <span class="categoria">PRIMER EQUIPO</span>
+        <h3>"Gran apoyo de la Hinchada"&nbsp;</h3>
+        <p>Más de 99,354 espectadores ingresaron al derbi de esapaña.</p>
+      </div>
+    </div>
+	  
+    <div class="tarjeta">
+      <img src="imagenes/Yamal, Lewandowski i Raphinia.jpg" alt="Resumen del partido">
+      <div class="contenido">
+        <span class="categoria">PRIMER EQUIPO</span>
+        <h3>El resumen del Barça - Real Mardrid</h3>
+        <p>Revive los mejores momentos del partido en este breve resumen de 3 minutos.</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <img src="imagenes/jersey-5457156_1280.jpg" alt="Balonmano ofrece título">
+      <div class="contenido">
+        <span class="categoria">CLUB - Hace 2 h</span>
+        <h3>"La nueva yersey"</h3>
+        <p>Asi seria la nueva equipación del Club.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <section id="seccion2">
+        <h2>Historia del Club.</h2>
+        <p>Entérate de lo último del Barça: partidos, fichajes, declaraciones y mucho más.</p>
+		<p>Para más información sobre la historia del club, visita:</p>
+<a href="historia de fc barcelona.html" class="btn-informacion">🔗 Historia del FC Barcelona</a>
+
+
+
+    </section>
+
+    <section id="seccion3">
+  <h2>Equipo Actual</h2>
+  <p>Conoce el talento de la plantilla actual, con grandes jugadores que llevan puesto los colores de este gran club. </p>
+
+  <div class="galeria-equipo">
+    <div class="jugador">
+      <img src="imagenes/ter stegen.jpg" alt="Jugador 1">
+      <p>Marc-Andre Ter Stegen</p>
+    </div>
+    <div class="jugador">
+      <img src="imagenes/iñaki peña.jpg" alt="Jugador 2">
+      <p>Iñaki Peña</p>
+    </div>
+    <div class="jugador">
+      <img src="imagenes/portero 3.jpg" alt="Jugador 3">
+      <p>szczesny</p>
+    </div>
+	  <div class="jugador">
+      <img src="imagenes/pau cubarsi.jpg" alt="Jugador 4">
+      <p>Pau Cubarsi</p>
+    </div>
+    <div class="jugador">
+      <img src="imagenes/Hector fort.jpg" alt="Jugador 5">
+      <p>Hector Fort</p>
+    </div>
+    <div class="jugador">
+      <img src="imagenes/Eric Garcia.jpg" alt="Jugador 6">
+      <p>Eric Garcia</p>
+    </div>
+  </div>
+
+ <a href="jugadores.html">
+  <button class="btn-efecto">Más información</button>
+</a>
+
+</section>
+
+
+
+
+  
+	
+	<section id="seccion4">
+        <h2>Leyendas.</h2>
+        <p>Desde 1899, el Barça ha marcado época. Conoce sus momentos más memorables y leyendas inolvidables.</p>
+		 <div class="galeria-equipo">
+    <div class="jugador">
+      <img src="imagenes/maradona @ FC Barcelona.jpg" alt="Jugador 1">
+      <p>Diego Armando Mardona</p>
+    </div>
+    <div class="jugador">
+      <img src="imagenes/ronaldinho.jpg" alt="Jugador 2">
+      <p>Ronadinho Gaucho</p>
+    </div>
+    <div class="jugador">
+      <img src="imagenes/messi.jpg" alt="Jugador 3">
+      <p>Lionel Andres Messi</p>
+    </div>
+  </div>
+    </section>
+	<section id="seccion5">
+  <h2>Técnicos</h2>
+  <p></p>
+
+  <div class="card-tecnico">
+    <img src="imagenes/Hansi Flick.jpg" alt="Hansi Flick" class="imagen-tecnico">
+    <div class="info-tecnico">
+      <h3>Hansi Flick</h3>
+      <p>El FC Barcelona y Hansi Flick llegaron a un acuerdo para que el técnico alemán fuera el entrenador del primer equipo para la temporada 2024/25 y hasta el 30 de junio de 2026. De este modo, Flick suma un nuevo equipo en una trayectoria de éxito, en la que lo ha ganado prácticamente todo.</p>
+    </div>
+  </div>
+</section>
+
+
+	
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horario Semanal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #074A95;
+      color: #fff;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #074A95;
+    }
+
+    @media (max-width: 250px) {
+      th, td {
+        font-size: 14px;
+        padding: 6px;
+      }
+    }
+	  .logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: ;
+}
+
+.logo-header img {
+  max-width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-header img:hover {
+  transform: scale(1.05); /* efecto suave al pasar el mouse */
+}
+	 
+
+	  
+  </style>
+</head>
+<body>
+
+
+
+
+
+	</body>
+	
+  
+    
+  <header>
+  <div class="logo-header">
+  <img src="imagenes/Download_Spotify_mobile_apps_icon-removebg-preview.png" alt="Logo 1">
+  <img src="imagenes/Cupra_vector_logo__svg__pdf__free_download_-_Brandlogos_net-removebg-preview.png" alt="Logo 2">
+   <img src="imagenes/nike.png" alt="Logo 3">
+	  <h2 class="titulo-logo">Patrocinadores Oficiales</h2>
+</div>
+
+
+
+</header>
+  
+<main>
+  <div>
+    <table class="calendar-table">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Rival</th>
+          <th>Competencia</th>
+          <th>Hora</th>
+          <th>Lugar</th>
+          <th>Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>25 Abril 2025</td>
+          <td>Real Madrid</td>
+          <td>La Liga</td>
+          <td>20:00</td>
+          <td>Camp Nou</td>
+          <td>4 - 0✅</td>
+        </tr>
+        <tr>
+          <td>30 Abril 2025</td>
+          <td>Manchester City</td>
+          <td>Champions League</td>
+          <td>21:00</td>
+          <td>Etihad Stadium</td>
+          <td>1 - 2✅</td>
+        </tr>
+        <tr>
+          <td>5 Mayo 2025</td>
+          <td>Sevilla</td>
+          <td>La Liga</td>
+          <td>18:30</td>
+          <td>Camp Nou</td>
+          <td>2 - 1 ✅</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+	
+
+	
+	
+	
+
+    <footer>
+        <p>&copy; 2025 Blaugrana Pasión. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+
+
+    
+
+<body>
+	
+  
+</body>
+
+
+<body>
+</body>
+</html>

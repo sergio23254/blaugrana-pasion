@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Blaugrana Pasión</title>
+  <style>
+    
+	 body {
+  font-family: Arial, sans-serif;
+  background: url('imagenes/camp nou.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+}
+	  body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* oscurece */
+  z-index: -1;
+}
+
+
+    h1 {
+      color: #fff200;
+      text-align: center;
+    }
+
+    form {
+      background-color: #1c2b3a;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 30px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #004d98;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a50044;
+    }
+	  #menu-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#menu {
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  margin: 8px 0;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: #ff6347;
+}
+	  
+
+  </style>
+</head>
+<body>
+	<button id="menu-btn">☰ Menú</button>
+
+<!-- Menú emergente -->
+<div id="menu" style="display: none;">
+  <ul>
+    <li><a href="pagina principal.html">Inicio</a></li>
+    <li><a href="jugadores.html">jugadores</a></li>
+  </ul>
+	<script>
+  document.getElementById("menu-btn").addEventListener("click", function() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "none" || menu.style.display === "") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
+    }
+  });
+</script>
+
+</div>
+
+  <h1>Contacto</h1>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
